@@ -87,7 +87,7 @@ section div h2 {
 
 .cajita .productos div {
     width: 300px;
-    height: 400px;
+    height: 450px;
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
@@ -203,7 +203,7 @@ section div h2 {
 
 .cafe div {
     width: 300px;
-    height: 480px;
+    height: 525px;
     border: #A0CDAC 1px solid;
     text-align: center;
     display: inline-block;
