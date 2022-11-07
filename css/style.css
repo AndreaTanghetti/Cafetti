@@ -4,12 +4,15 @@
     padding: 0;
 }
 
-body,html {
+body,
+html {
     background-color: #fff7f5;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0%;
+    padding: 0%;
 }
 
 header div {
@@ -55,10 +58,8 @@ header nav ul li a {
 }
 
 .imgInicio {
-    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 section div h2 {
@@ -267,3 +268,41 @@ footer img {
     height: 30px;
     display: block;
 }
+
+/* media query */
+/*index*/
+@media screen and (max-width:710px) {
+    .imgInicio {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:357px) {
+    header nav ul li a {
+        padding: 5px;
+        margin: 5px;
+        font-size: 15px;
+    }
+    .cajita img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10%;
+    }
+    .cajita .productos div {
+        width: 200px;
+        height: 350px;
+        border: #A0CDAC 1px solid;
+        text-align:center;
+        border-radius: 10%;
+        margin: 5px;
+    }
+    
+    }
