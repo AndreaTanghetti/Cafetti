@@ -60,6 +60,7 @@ header nav ul li a {
 .imgInicio {
     display: flex;
     justify-content: center;
+
 }
 
 section div h2 {
@@ -270,10 +271,20 @@ footer img {
 }
 
 /* media query */
-/*index*/
 @media screen and (max-width:710px) {
-    .imgInicio {
-        display: none;
+    .imgInicio img {
+        width: 550px;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cajita .productos div {
+        margin: 5px;
+    }
+
+    .cafe div {
+        margin: 5px;
     }
 }
 
@@ -283,26 +294,64 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
+
+    header nav ul li a {
+        margin: 5px;
+        padding: 0;
+    }
 }
 
-@media screen and (max-width:357px) {
-    header nav ul li a {
-        padding: 5px;
-        margin: 5px;
-        font-size: 15px;
+@media screen and (max-width:550px) {
+    .imgInicio {
+        display: none;
     }
+}
+
+
+
+
+@media screen and (max-width:357px) {
+
+    header nav ul li a {
+        padding: 0px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
     .cajita img {
         width: 200px;
         height: 200px;
         border-radius: 10%;
     }
+
     .cajita .productos div {
         width: 200px;
         height: 350px;
-        border: #A0CDAC 1px solid;
-        text-align:center;
-        border-radius: 10%;
+    }
+
+    .hero h1 {
+        font-size: 25px;
         margin: 5px;
+
     }
-    
+
+    section div h2 {
+        font-size: 22px;
     }
+    .cafe div img{
+        width: 220px;
+        height: 220px;
+    }
+    .cafe div {
+        width: 220px;
+        height: 420px;
+    }
+    .cafe select {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .cafe a{
+        font-size: 15px;
+    }
+
+}
