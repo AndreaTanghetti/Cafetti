@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 body,
@@ -96,6 +97,7 @@ section div h2 {
     width: 300px;
     height: 300px;
     border-radius: 10%;
+    padding: 20px;
 }
 
 .cajita .productos div {
@@ -104,7 +106,6 @@ section div h2 {
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    padding: 20px;
 }
 
 .productos div h3 {
@@ -206,6 +207,7 @@ section div h2 {
     width: 300px;
     height: 300px;
     border-radius: 10%;
+    padding: 20px;
 }
 
 .cafe div p {
@@ -216,11 +218,11 @@ section div h2 {
 
 .cafe div {
     width: 300px;
-    height: 525px;
+    height: 550px;
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 50px;
 }
 
@@ -266,7 +268,10 @@ section div h2 {
 .contenedor .paula img {
     width: 500px;
     height: 500px;
+    padding: 20px;
     border-radius: 10%;
+    object-fit: cover;
+
 }
 
 .contenedor .paula {
@@ -275,9 +280,6 @@ section div h2 {
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    padding: 20px;
-    margin: 50px;
-    object-fit: cover;
 }
 
 .baristas {
@@ -356,22 +358,25 @@ footer img {
 /* --FIN GRIDS-- */
 
 /*--MEDIA QUERIES--*/
-@media screen and (max-width:1102px){
+@media screen and (max-width:1102px) {
     .contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;}
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 
 }
 
-@media screen and (max-width:875px){
-    .b4{
-        display: none;}
+@media screen and (max-width:875px) {
+    .b4 {
+        display: none;
+    }
 
 }
-@media screen and (max-width:835px){
+
+@media screen and (max-width:835px) {
     header nav ul {
         display: flex;
         flex-direction: column;
@@ -402,40 +407,48 @@ footer img {
         margin: 5px;
         padding: 0;
     }
-    .b3{
-        display: none;}
+
+    .b3 {
+        display: none;
+    }
 }
 
 @media screen and (max-width:550px) {
     .imgInicio {
         display: none;
     }
+
     .contenedor .paula img {
         width: 350px;
-        height: 350px;}
-    
-    .contenedor .paula{
+        height: 350px;
+    }
+
+    .contenedor .paula {
         width: 350px;
         height: 350px;
     }
 }
-@media screen and (max-width:432px){
-    .b1{
+
+@media screen and (max-width:432px) {
+    .b1 {
         display: none;
     }
 
 }
-@media screen and (max-width:395px){
+
+@media screen and (max-width:395px) {
     .contenedor .paula img {
         width: 300px;
-        height: 300px;}
-    
-    .contenedor .paula{
+        height: 300px;
+    }
+
+    .contenedor .paula {
         width: 300px;
         height: 300px;
     }
 
 }
+
 @media screen and (max-width:357px) {
 
     header nav ul li a {
@@ -468,11 +481,12 @@ footer img {
     .cafe div img {
         width: 220px;
         height: 220px;
+        border: 15px;
     }
 
     .cafe div {
-        width: 220px;
-        height: 420px;
+        width: 230px;
+        height: 455px;
     }
 
     .cafe select {
@@ -485,13 +499,17 @@ footer img {
     }
 
 }
-@media screen and (max-width:345px){
-.contenedor .paula img {
-    width: 300px;
-    height: 300px;}
 
-.contenedor .paula{
-    margin: 5px;
-    padding: 0;}
+@media screen and (max-width:345px) {
+    .contenedor .paula img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contenedor .paula {
+        margin: 5px;
+        padding: 0;
+    }
 }
+
 /*-- FIN MEDIA QUERIES--*/
