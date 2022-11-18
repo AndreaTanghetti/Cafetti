@@ -16,6 +16,12 @@ html {
     padding: 0%;
 }
 
+header {
+    background-color: #A0CDAC;
+
+}
+
+
 header div {
     background-color: #A0CDAC;
     display: flex;
@@ -33,13 +39,13 @@ header nav ul {
 header nav ul li a:hover {
     color: #fff7f5;
     background-color: #d2bf9e;
-    /* transform: scale(1.1); */
 }
 
 header nav ul li a {
     text-decoration: none;
     color: black;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin: 10px;
     padding: 10px;
     background-color: #A0CDAC;
@@ -47,7 +53,12 @@ header nav ul li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-size: 20px;
-    /* transition: 01s; */
+}
+
+/* MODIF. BOOTSTRAP */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /*--MAIN--*/
@@ -220,11 +231,10 @@ section div h2 {
 
 .cafe div {
     width: 300px;
-    height: 550px;
+    height: 570px;
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    /* padding: 20px; */
     margin: 50px;
 }
 
@@ -232,17 +242,18 @@ section div h2 {
     text-decoration: none;
     color: #fff7f5;
     display: inline-block;
-    margin: 10px;
     padding: 10px;
+    margin: 5px;
     background-color: #A0CDAC;
     border-radius: 20px;
+
 }
 
 .cafe a {
     text-decoration: none;
     color: #fff7f5;
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     background-color: #A0CDAC;
     border-radius: 20px;
@@ -265,6 +276,7 @@ section div h2 {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
+    margin: 10px;
 }
 
 .contenedor .paula img {
@@ -371,6 +383,21 @@ footer img {
 
 }
 
+@media screen and (max-width:992px) {
+    header div {
+        align-items: flex-start;
+    }
+
+    .logo {
+        align-items: center;
+    }
+
+    header nav ul li a {
+        justify-content: center;
+    }
+
+}
+
 @media screen and (max-width:875px) {
     .b4 {
         display: none;
@@ -380,7 +407,6 @@ footer img {
 
 @media screen and (max-width:835px) {
     header nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
