@@ -25,6 +25,16 @@
     margin: auto
 }
 
+.btn-outline-success:hover {
+    background-color: #d2bf9e;
+}
+
+.btn-outline-success {
+    color: black;
+    border-color: #88b293;
+    border-radius: 30%;
+}
+
 body,
 html {
     background-color: #fff7f5;
@@ -36,18 +46,40 @@ html {
     padding: 0%;
 }
 
-header div {
-    background-color: #A0CDAC;
+.logo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 
-header nav ul {
-    list-style: none;
-    width: 100%;
-    display: flex;
+header div {
+    background-color: #A0CDAC;
+
 }
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #fff7f5;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    background-color: #A0CDAC;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
 
 
 header nav ul li a:hover {
@@ -55,19 +87,7 @@ header nav ul li a:hover {
     background-color: #d2bf9e;
 }
 
-header nav ul li a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    padding: 10px;
-    background-color: #A0CDAC;
-    border-radius: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-}
+
 
 
 /*--MAIN--*/
@@ -389,29 +409,14 @@ footer img {
     }
 }
 
+/* @media screen and (max-width:1222px) {
+
+.container-fluid{
+
+}
+} */
+
 @media screen and (max-width:992px) {
-    header div {
-        align-items: flex-end;
-        padding: 10px;
-    }
-
-    .logo {
-        align-items: center;
-    }
-
-    /* .navbar-nav {
-        align-items: center;
-    } */
-    .navbar-light .navbar-toggler{
-        border-color:#a0cdac07;
-
-    }
-
-    header nav ul li a {
-        margin: 5px;
-        padding: 0;
-    }
-
     .b4 {
         display: none;
     }
