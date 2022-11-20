@@ -36,11 +36,6 @@ html {
     padding: 0%;
 }
 
-header {
-    background-color: #A0CDAC;
-
-}
-
 header div {
     background-color: #A0CDAC;
     display: flex;
@@ -287,30 +282,62 @@ section div h2 {
     margin: 10px;
 }
 
-.contenedor .paula img {
+.paula img {
     width: 500px;
     height: 500px;
     padding: 20px;
     border-radius: 10%;
     object-fit: cover;
-
 }
 
 .contenedor .paula {
     width: 500px;
     height: 500px;
     border: #A0CDAC 1px solid;
-    text-align: center;
     border-radius: 10%;
 }
 
 .baristas {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    grid-area: bar;
 }
 
-/*--FOOTER--*/
+/* ---GRIDS--- */
+.contenedor {
+    display: grid;
+    grid-template-rows: 300px 600px 200px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "presentacion presentacion presentacion presentacion"
+        "quien quien paula paula"
+        "propuesta propuesta propuesta propuesta"
+        "bar bar bar bar"
+    ;
+}
+
+.presentacion {
+    grid-area: presentacion;
+}
+
+.quien {
+    margin: auto;
+    grid-area: quien;
+}
+
+.paula {
+    margin: auto;
+    grid-area: paula;
+}
+
+.propuesta {
+    grid-area: propuesta;
+}
+
+
+/* ---FIN GRIDS Y QUIENES SOMOS--- */
+
+/*---FOOTER---*/
 footer {
     background-color: #A0CDAC;
     margin-top: auto;
@@ -344,58 +371,22 @@ footer img {
     display: block;
 }
 
-/* ---GRIDS--- */
-.contenedor {
-    display: grid;
-    grid-template-rows: 300px 600px 200px 200px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "presentacion presentacion presentacion presentacion"
-        "quien quien paula paula"
-        "propuesta propuesta propuesta propuesta"
-        "bar bar bar bar"
-    ;
-}
-
-.presentacion {
-    grid-area: presentacion;
-}
-
-.quien {
-    grid-area: quien;
-}
-
-.paula {
-    grid-area: paula;
-}
-
-.propuesta {
-    grid-area: propuesta;
-}
-
-.baristas {
-    grid-area: bar;
-}
-
-/*---FIN GRIDS---*/
+/*---FIN FOOTER---*/
 
 /*---MEDIA QUERIES---*/
 @media screen and (max-width:1102px) {
     .contenedor {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: 300px 500px 500px 200px 200px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "presentacion presentacion "
+            "quien quien "
+            "paula paula"
+            "propuesta propuesta "
+            "bar bar "
+        ;
     }
-    /* .baristas{
-        align-items: flex-end;
-        justify-content: center;
-
-        
-        
-    } */
-
-
 }
 
 @media screen and (max-width:992px) {
@@ -404,30 +395,43 @@ footer img {
         padding: 10px;
     }
 
-
     .logo {
         align-items: center;
     }
 
-    .navbar-nav {
+    /* .navbar-nav {
         align-items: center;
+    } */
+    .navbar-light .navbar-toggler{
+        border-color:#a0cdac07;
 
     }
-
 
     header nav ul li a {
         margin: 5px;
         padding: 0;
     }
-}
 
-/* @media screen and (max-width:875px) {
     .b4 {
         display: none;
     }
 
-} */
+}
 
+@media screen and (max-width:918px) {
+    .contenedor {
+        display: grid;
+        grid-template-rows: auto 550px 500px auto 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "presentacion "
+            "quien "
+            "paula"
+            "propuesta"
+            "bar "
+        ;
+    }
+}
 
 @media screen and (max-width:710px) {
     .cajita .productos div {
@@ -450,8 +454,7 @@ footer img {
     }
 }
 
-@media screen and (max-width:550px) {
-
+@media screen and (max-width:610px) {
     .contenedor .paula img {
         width: 350px;
         height: 350px;
@@ -461,24 +464,36 @@ footer img {
         width: 350px;
         height: 350px;
     }
+
+    .contenedor {
+        display: grid;
+        grid-template-rows: auto auto 400px auto 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "presentacion "
+            "quien "
+            "paula"
+            "propuesta"
+            "bar "
+        ;
+    }
 }
 
-@media screen and (max-width:432px) {
+@media screen and (max-width:430px) {
     .b1 {
         display: none;
     }
-
 }
 
 @media screen and (max-width:395px) {
     .contenedor .paula img {
         width: 300px;
-        height: 300px;
+        height: 350px;
     }
 
     .contenedor .paula {
-        margin: 5px;
-        padding: 0;
+        height: 350px;
+        width: 300px;
     }
 }
 
@@ -530,4 +545,5 @@ footer img {
     }
 
 }
+
 /*-- FIN MEDIA QUERIES--*/
