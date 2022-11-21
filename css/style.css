@@ -409,12 +409,6 @@ footer img {
     }
 }
 
-/* @media screen and (max-width:1222px) {
-
-.container-fluid{
-
-}
-} */
 
 @media screen and (max-width:992px) {
     .b4 {
@@ -484,11 +478,37 @@ footer img {
     }
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:460px) {
     .b1 {
         display: none;
     }
+
+    .container-fluid {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .navbar-light .navbar-toggler {
+        font-size: 15px;
+    }
+
+    .d-flex {
+        justify-content: flex-end;
+        margin: 0%;
+    }
+
+    .form-control  {
+        font-size: 10px;
+    }
+    .form-control .me-2{
+margin-right: 0rem;    }
+
+    .btn-outline-success {
+        font-size: 10px;
+    }
 }
+
+
 
 @media screen and (max-width:395px) {
     .contenedor .paula img {
