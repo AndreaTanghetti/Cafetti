@@ -35,7 +35,7 @@
 
 .btn-outline-success {
     color: black;
-    border-color: #88b293;
+    border-color: rgb(136, 178, 147);
     border-radius: 30%;
 }
 
@@ -86,10 +86,6 @@ header nav ul li a {
 
 
 
-header nav ul li a:hover {
-    color: #fff7f5;
-    background-color: #d2bf9e;
-}
 
 
 

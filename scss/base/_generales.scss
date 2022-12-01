@@ -1,0 +1,52 @@
+@import "./variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MODIF. BOOTSTRAP */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.carousel {
+    width: 600px;
+    margin: auto
+}
+
+.carousel-control-prev-icon {
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.carousel-control-next-icon {
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.btn-outline-success {
+    color:$color-textos;
+    border-color:#88b293;
+    border-radius: 30%;
+}
+
+.btn-outline-success:hover {
+    background-color:$color-hover;
+}
+
+.navbar-light .navbar-toggler {
+    color: #a0cdac00;
+}
+
+/* FIN MODIF. BOOTSTRAP */
+html {
+    body {
+        background-color: $color-claro;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+}
